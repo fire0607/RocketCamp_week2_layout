@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    /* outline: 1px solid #000; */
+}
+
+body{
+    font-family: "Noto Sans TC";
+}
+
+
+
+.header{
+    background-color: #AA0601;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header img{
+    max-width: 80px;
+    height: 50px;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.header li{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.header li:hover{
+    background-color: #87130f;
+}
+
+.header a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 48px;
+}
+
+
+
+.material-symbols-outlined{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* 主體內容 */
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding: 10px 15px ;
+}
+
+.container h2{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 72px;
+}
+
+.container h2::before{
+    content:"";
+    border-left: 8px solid #AA0601;
+    padding-right: 15px;
+}
+
+.container h3{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container li{
+    padding-bottom: 32px;
+}
+
+.container li h4{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.container li p{
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+}
+
+/* 頁尾區 */
+
+.footer{
+    background-color: #AA0601;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 48px; 
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav li{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 48px;
+}
+
+.footer-nav img{
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.subnav li:hover{
+    background-color: #7e0804;
+}
+
+.footer-text{
+    display: flex;
+    color: #fff;
+    font-size: 36px;
+    line-height: 54px;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    padding: 0px 0px 30px 60px;
+}
+
+
+.icon{
+    font-size: 36px ;
+    line-height: 54px ; 
+    padding-right: 20px; 
+    /* icon大小吃不到 */
+    /* 權重問題 */
+} 
+
+
+.footer-text ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    color:#fff;
+    padding: 32px;
+}
+
+.policy ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.policy a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.policy li{
+    padding-left: 48px;
+}
+
+
+
+/* 平板RWD */
+
+@media(max-width: 991px){
+    .container{
+        padding: 10px;
+        max-width:991px ;
+     
+    }
+    .subnav li{
+        padding: 0px 10px;
+    }
+    .container ul{
+        width: 99%;
+    }
+}
+
+/* 手機RWD */
+
+@media(max-width: 575px){
+
+    .container{
+        max-width: 575px
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .header img{
+        margin: 15px;
+    }
+
+    .header ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header li{
+        width: 50%;
+        border: 1px solid #fff;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    .footer-nav{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .social{
+        position: absolute;
+    }
+    
+    .subnav{
+        width: 50%;
+    }
+
+    .social{
+    }
+
+    .social img{
+        width: 50%;
+    }
+
+    .footer-text{
+        padding: 0px;
+        padding-left: 15px;
+        line-height: 24px;
+    }
+
+    .footer-text ul{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .footer-nav{
+        padding-top: 0px;
+    }
+
+    .footer-nav li{
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .subnav{
+        display: none;
+    }
+
+    .icon{
+        font-size: 16px;
+        padding-right: 10px;
+        line-height: 24px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .policy ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .policy li {
+        padding: 0px;
+    }
+}
+

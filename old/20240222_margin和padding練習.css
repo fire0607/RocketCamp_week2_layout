@@ -1,0 +1,56 @@
+body{
+	font-family: "微軟正黑體";
+}
+
+a{
+	display: block;
+	color: #ffffff;
+	background-color: #88680f;
+	width: 50px;
+	height: 50px;
+}
+
+.style1{
+	color:blue;
+}
+
+.style1 li{
+	list-style: none;
+}
+
+.margin-test{
+	margin-left: 30px;
+	border: 3px solid blue;
+	line-height: 28px;
+}
+
+.margin-test h1{
+	font-size: 24px;
+	color: rgb(15, 15, 137);
+}
+
+.margin-test h2{
+	font-size: 18px;
+	color: rgb(200, 29, 29);
+}
+
+.margin-test p{
+	margin-bottom: 30px;
+
+}
+
+.padding-test{
+	padding-left: 30px;
+	border: 3px solid blue;
+	line-height: 28px;
+}
+
+.padding-test h1{
+	font-size: 24px;
+	color: rgb(137, 15, 31);
+}
+
+.padding-test h2{
+	font-size: 18px;
+	color: rgb(52, 29, 200);
+}

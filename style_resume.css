@@ -1,0 +1,140 @@
+body{
+	max-width: 950px;
+	background-color: #EFEFDA;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	padding: 50px; 
+	line-height: 28px;
+	letter-spacing: 1px;
+	color:rgba(92, 119, 145,1)
+  }
+  
+  
+  h1{
+	  height: 50px;
+	  font-size: 30px;
+	  font-weight: bold;
+	  letter-spacing: 3px;
+	  line-height: 50px;
+	  color: rgba(92, 119, 145,1);
+  }
+  
+  h2{
+	position: relative;
+	top: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color:rgba(115, 194, 210,1);
+  /*   box-shadow: 0px 5px rgba(255,255,255,0.8) */
+  }
+  
+  h3{
+	font-size: 20px;
+	font-weight: bold;
+	color: rgba(241, 167, 69,1);
+	margin: 5px 0px 5px 0px;
+  }
+  
+  p{
+	font-size: 16px;
+  }
+  
+  a{
+	color: rgba(92, 119, 145,1);
+	text-decoration: none;
+  }
+  a:hover{
+	color:rgb(241, 129, 102);
+  }
+  
+  img{
+	display: flex;
+	  width: 250px;
+	  height: 250px;
+	border-radius: 15px;
+	box-shadow: 10px 8px 10px rgba(0, 0, 0,0.2)
+  }
+  
+  li{
+	list-style:none;
+  }
+  
+  
+  ul{
+	list-style: none;
+  }
+  
+  hr{
+	border: solid 3px rgba(255, 255, 255,0.7);
+	margin-top: 20px;
+	width: 100%;
+  }
+  
+  .resume-top{
+	justify-content: flex-start;
+  }
+  
+  .top-myname{
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .top-myname-left{
+	flex-direction: column;
+	position: absolute;
+	left: 330px;
+	line-height: 30px;
+  }
+  
+  
+  .resume-top-p{
+	position: relative;
+	margin: 20px;
+	right: 20px;
+  }
+  .resume-top-hr{
+	border: solid 3px rgba(255, 255, 255,0.7);
+  }
+  
+  .contactin-formation{
+	position: relative;
+
+  }
+  
+  .skills{
+	position: relative;
+	list-style : disc;
+	left: 20px;
+  }
+  .resume-bottom{
+	display: flex;
+	line-height: 28px;
+  }
+  
+  .resume-top-skills{
+	position: relative;
+	margin-top: 10px;
+  }
+  
+  .resume-bottom-works{
+	width: 500px;
+	height: 400px;
+	flex-direction: column;
+	justify-content:space-around;
+  }
+  
+  .years{
+	margin-top: 10px;
+	font-size: 18px;
+	color: rgba(241, 129, 102,1);
+  }
+  
+  .resume-bottom-contest{
+	position: relative;
+	right: 30px;
+  }
+  
+  .contest{
+	position: relative;
+	list-style : disc;
+  }
